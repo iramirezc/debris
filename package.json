@@ -2,8 +2,10 @@
   "name": "debris",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --config webpack.dev.js --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
