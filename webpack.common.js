@@ -11,6 +11,7 @@ module.exports = {
     clean: true,
   },
   resolve: {
+    extensions: [".tsx", "..."],
     modules: [path.resolve(__dirname, "src"), "node_modules"],
     alias: {
       App: path.resolve(__dirname, "src/app"),
@@ -19,7 +20,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.tsx?$/,
+        include: path.resolve(__dirname, "src"),
+        exclude: /node_modules/,
+        loader: "ts-loader",
+      },
+      {
+        test: /\.jsx?$/,
         include: path.resolve(__dirname, "src"),
         exclude: /node_modules/,
         loader: "babel-loader",
