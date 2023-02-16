@@ -1,3 +1,3 @@
-import { getTime } from "./time";
+import { getTime } from "./time"
 
-export const log = (message: string) => console.log(`${getTime()}:`, message);
+export const log = (message: string) => console.log(`${getTime()}:`, message)
