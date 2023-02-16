@@ -2,6 +2,11 @@
   "compilerOptions": {
     "module": "ES6",
     "allowSyntheticDefaultImports": true,
-    "jsx": "react"
-  }
+    "jsx": "react",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "outDir": "./build/",
+    "allowJs": true
+  },
+  "include": ["./src/"]
 }
