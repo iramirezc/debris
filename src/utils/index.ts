@@ -1,1 +1,1 @@
-export const log = (message: string) => console.log(message);
+export * from "./logger";
