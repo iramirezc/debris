@@ -1,20 +1,26 @@
 module.exports = {
-  root: true,
+  env: {
+    browser: true,
+    es2021: true
+  },
   extends: [
     "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:react/recommended",
     "prettier"
   ],
-  env: {
-    browser: true
-  },
+  overrides: [],
   parser: "@typescript-eslint/parser",
   parserOptions: {
+    ecmaVersion: "latest",
     project: true,
+    sourceType: "module",
     tsconfigRootDir: __dirname
   },
+  plugins: ["react", "@typescript-eslint"],
+  root: true,
+  rules: {},
   settings: {
     react: {
       version: "detect"
