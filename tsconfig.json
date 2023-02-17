@@ -8,11 +8,9 @@
     "outDir": "./build/",
     "allowJs": true,
     "moduleResolution": "node",
-    "baseUrl": "./src/",
+    "baseUrl": "./",
     "paths": {
-      "app/*": ["app/*"],
-      "components/*": ["components/*"],
-      "utils/*": ["utils/*"]
+      "*": ["*", "src/*"]
     }
   },
   "include": ["./src/"]
