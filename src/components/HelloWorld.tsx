@@ -1,5 +1,5 @@
 import React from "react"
-import { log } from "utils/index"
+import { log } from "utils"
 
 export const HelloWorld: React.FC<{ message?: string }> = ({
   message = "Hello World!"

@@ -6,7 +6,12 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "outDir": "./build/",
-    "allowJs": true
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "utils": ["src/utils"]
+    }
   },
   "include": ["./src/"]
 }
