@@ -1,8 +1,9 @@
+# Directories
 node_modules
-lib
-dist
 build
+dist
+lib
 
 # Files
-webpack.*
 .eslintrc.js
+webpack.*
