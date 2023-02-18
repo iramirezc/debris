@@ -20,3 +20,7 @@ export const debrisSlice = createSlice({
     }
   }
 })
+
+export const { idle, loading } = debrisSlice.actions
+
+export default debrisSlice.reducer
