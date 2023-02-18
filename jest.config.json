@@ -3,5 +3,6 @@
   "moduleNameMapper": {
     "^utils/(.*)$": "<rootDir>/src/utils/$1"
   },
+  "setupFilesAfterEnv": ["<rootDir>/tests/jest-setup.ts"],
   "testEnvironment": "jsdom"
 }
