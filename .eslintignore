@@ -5,5 +5,4 @@ dist
 lib
 
 # Files
-.eslintrc.js
 webpack.*
