@@ -2,5 +2,6 @@
   "moduleDirectories": ["src", "node_modules"],
   "moduleNameMapper": {
     "^utils/(.*)$": "<rootDir>/src/utils/$1"
-  }
+  },
+  "testEnvironment": "jsdom"
 }
