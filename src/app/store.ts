@@ -1,11 +1,8 @@
-import { configureStore } from "@reduxjs/toolkit"
-import debrisReducer from "features/debris"
+import { configureStore } from "./configure-store"
 
-const store = configureStore({
-  reducer: {
-    debris: debrisReducer
-  }
-})
+const store = configureStore()
 
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
+
+export default store
