@@ -1,10 +1,19 @@
-import { configureStore } from "./configure-store"
+import { combineReducers, configureStore } from "@reduxjs/toolkit"
+import type { PreloadedState } from "@reduxjs/toolkit"
 
-const store = configureStore()
+import debrisReducer from "features/debris"
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+const rootReducer = combineReducers({
+  debris: debrisReducer
+})
 
-export { configureStore }
+export const setupStore = (preloadedState?: PreloadedState<RootState>) => {
+  return configureStore({
+    reducer: rootReducer,
+    preloadedState
+  })
+}
 
-export default store
+export type RootState = ReturnType<typeof rootReducer>
+export type AppStore = ReturnType<typeof setupStore>
+export type AppDispatch = AppStore["dispatch"]
