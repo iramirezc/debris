@@ -1,7 +1,8 @@
 {
-  "moduleDirectories": ["src", "node_modules"],
+  "moduleDirectories": ["src", "tests", "node_modules"],
   "moduleNameMapper": {
-    "^utils/(.*)$": "<rootDir>/src/utils/$1"
+    "^utils/(.*)$": "<rootDir>/src/utils/$1",
+    "^tests/(.*)$": "<rootDir>/tests/$1"
   },
   "setupFilesAfterEnv": ["<rootDir>/tests/jest-setup.ts"],
   "testEnvironment": "jsdom"
