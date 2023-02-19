@@ -12,6 +12,7 @@
     "lint:eslint:fix": "eslint . --fix",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
+    "lint:test": "npm run lint && npm run test",
     "test": "jest",
     "test:u": "npm run test -- -u",
     "storybook": "start-storybook -p 6006",
