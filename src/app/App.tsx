@@ -1,7 +1,8 @@
 import React from "react"
 import { Provider } from "react-redux"
 import { setupStore } from "app/store"
-import { DebrisStatus, HelloWorld } from "components"
+import { HelloWorld } from "components"
+import { DebrisStatus } from "features/debris/components"
 
 export const App = () => (
   <Provider store={setupStore()}>

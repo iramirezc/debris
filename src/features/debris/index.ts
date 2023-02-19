@@ -1,3 +1,4 @@
-export * from "./debris-slice"
-export * from "./debris-selectors"
-export { default } from "./debris-slice"
+export * from "./slice/debris-slice"
+export * from "./selectors/debris-selectors"
+
+export { default } from "./slice/debris-slice"
