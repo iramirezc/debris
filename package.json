@@ -68,5 +68,8 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "styled-components": "^5.3.6"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

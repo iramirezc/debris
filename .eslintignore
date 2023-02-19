@@ -8,3 +8,4 @@ lib
 # Files
 .eslintrc.js
 webpack.*
+mockServiceWorker.js
