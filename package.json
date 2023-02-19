@@ -12,7 +12,8 @@
     "lint:eslint:fix": "eslint . --fix",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "test:u": "npm run test -- -u"
   },
   "keywords": [],
   "author": "",
