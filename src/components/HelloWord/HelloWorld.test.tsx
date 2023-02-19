@@ -7,6 +7,14 @@ jest.mock("utils", () => ({
 }))
 
 describe("<HelloWorld/>", () => {
+  beforeAll(() => {
+    jest.spyOn(console, "log").mockImplementation()
+
+    global.fetch = jest.fn().mockResolvedValue({
+      json: jest.fn().mockResolvedValue({ status: "ok" })
+    })
+  })
+
   test("renders with the default 'Hello World!' message", () => {
     const { container } = render(<HelloWorld />)
 
